@@ -3,13 +3,13 @@
 set -e
 
 update() {
-  set -x
-  curl \
-    --fail \
-    --show-error \
-    --silent \
-    --user "$USERNAME:$PASSWORD" \
-    "https://domains.google.com/nic/update?hostname=$HOSTNAME"
+	set -x
+	curl \
+		--fail \
+		--show-error \
+		--silent \
+		--user "$USERNAME:$PASSWORD" \
+		"https://domains.google.com/nic/update?hostname=$HOSTNAME"
 }
 
 RESPONSE=$(update)
