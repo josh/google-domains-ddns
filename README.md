@@ -11,7 +11,7 @@ version: "3"
 services:
   ddns:
     restart: always
-    image: docker.pkg.github.com/josh/google-domains-ddns/google-domains-ddns
+    image: ghcr.io/josh/google-domains-ddns
     environment:
       - HOSTNAME=example.net
       - USERNAME=
