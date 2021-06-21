@@ -10,6 +10,6 @@ ADD update-google-domain.sh /usr/local/bin/
 
 ENTRYPOINT [ "/usr/bin/tickerd", "--", "/usr/local/bin/update-google-domain.sh" ]
 
-ENV TICKERD_HEALTHCHECK_FILE "/var/log/healthcheck"
+ENV TICKERD_HEALTHCHECK_PORT 9000
 HEALTHCHECK --interval=1m --timeout=3s --start-period=3s --retries=1 \
   CMD [ "/usr/bin/tickerd", "-healthcheck" ]
