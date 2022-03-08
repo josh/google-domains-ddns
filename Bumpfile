@@ -1,2 +1,0 @@
-alpine /FROM alpine:([\d.]+)/ docker:alpine|^3
-Dockerfile
